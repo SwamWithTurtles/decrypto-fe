@@ -1,0 +1,23 @@
+const express = require('express');
+const path = require('path');
+const proxy = require('express-http-proxy');
+
+const app = express();
+
+const backendProxyUrls = {
+    questionAdmin: process.env.BACKEND_URL || "http://host.docker.internal:8080"
+};
+
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/ping', function (req, res) {
+    return res.send('pong');
+});
+
+app.use('/api', proxy(backendProxyUrls.questionAdmin));
+
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.listen(process.env.PORT || 3000);

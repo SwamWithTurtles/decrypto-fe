@@ -1,0 +1,122 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+
+.wordlist-container {
+    width: 40%;
+    display: inline-block;
+
+}
+
+table {
+    width: 60%;
+}
+
+.team-header {
+    background-color: #ccc;
+}
+
+.table-team-red .clue-word {
+    background-color: #ff828c;
+    font-weight: bold;
+}
+
+.nav {
+    background-color: #000000;
+}
+
+.nav a {
+    color: white;
+}
+
+.nav a:hover {
+    color: #828cff;
+}
+
+.main-page {
+    padding: 5px;
+}
+
+.nav-title {
+    font-weight: bold;
+    color: #9c0920;
+}
+
+#team-roster {
+    width: 100%;
+}
+
+.secondary-blue {
+    background-color: #828cff;
+}
+
+.secondary-red {
+    background-color: #ff828c;
+}
+
+
+.header-red {
+    background-color: #9c0920;
+    color: white;
+    font-weight: bold;
+    width: 15%;
+}
+
+.header-blue {
+    background-color: #09509c;
+    color: white;
+    font-weight: bold;
+    width: 15%;
+}
+
+.table-team-blue .clue-word {
+    background-color: #09509c;
+    color: white;
+    font-weight: bold;
+}
+
+.section-container {
+    border: 1px solid black;
+    width: 95%;
+    margin: auto auto 1em;
+}
+
+.alert-skinny {
+    margin-bottom: 1px;
+    line-height:30px;
+    padding:0px 15px;
+}
+
+table.word-display {
+    table-layout: fixed ;
+    width: 100% ;
+}
+table.word-display td {
+    width: 25% ;
+}
+
+.code-name {
+    font-family: monospace;
+}
+
+.red {
+    color: #9c0920;
+}
+
+.blue {
+    color: #09509c;
+}
+
+.team-roster {
+    margin: 15px 0;
+}
+
+.words {
+    padding: 5px 0;
+}

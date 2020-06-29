@@ -1,0 +1,20 @@
+{
+  "short_name": "Decrypto",
+  "name": "Decrypto: The Word Game for Spies",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "detective.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

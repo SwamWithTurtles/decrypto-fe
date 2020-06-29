@@ -1,0 +1,16 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  decrypto-be:
+    ports:
+      - "8080:8080"
+    image: decrypto-be:latest
+
+  decrypto-fe:
+    image: decrypto-fe
+    ports:
+      - "3000:3000"
+    environment:
+      BACKEND_URL: "http://decrypto-be:8080"
